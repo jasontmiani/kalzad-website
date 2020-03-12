@@ -2,10 +2,10 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 //import { Gradient } from "uigradients"
+//import { generator } from "uigradients"
 import { Menu } from "antd"
 import { MailOutlined, AppstoreOutlined, SettingOutlined } from "antd"
-
-const Header = ({ siteTitle }) => {
+/* const Header = ({ siteTitle }) => {
   const { SubMenu } = Menu
 
   const [mail, setMailActive] = useState("mail")
@@ -54,10 +54,24 @@ const Header = ({ siteTitle }) => {
       </Menu>
     </div>
   )
-}
-/* const Header = ({ siteTitle }) => {
+} */
+const Header = ({ siteTitle }) => {
+ /*  const [backgroundColor, setBackgroundColor] = useState(null)
+
+  useEffect(() => {
+    setBackgroundColor(
+      generator({
+        preset: "frost",
+      })
+    )
+  }) */
   return (
-    <Gradient preset="frost">
+    <header
+      style={{
+        background: "linear-gradient(to right, #000046, #1cb5e0)",
+        padding: '2.5rem'
+      }}
+    >
       <div
         style={{
           margin: `0 auto`,
@@ -77,9 +91,9 @@ const Header = ({ siteTitle }) => {
           </Link>
         </h1>
       </div>
-    </Gradient>
+    </header>
   )
-} */
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
