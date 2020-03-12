@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react"
-//import { Link } from "gatsby"
+import { Link } from "gatsby"
 import Clock from "react-live-clock"
-//import Layout from "../components/layout"
-import MainLayout from "../components/mainLayout"
-//import Image from "../components/image"
-//import SEO from "../components/seo"
+import Layout from "../components/layout"
+import Image from "../components/image"
+import SEO from "../components/seo"
 import axios from "axios"
 
 export const MyCurrentTime = () => {
@@ -59,12 +58,12 @@ export const VisitorClock = () => {
   )
 }
 
-/* const IndexPage = () => (
+const IndexPage = () => (
   <div>
-    <MainLayout>
+    <Layout>
       <SEO title="Home" />
       <h1> Gamer, Nerd, Dreamer </h1>
-      <MyClock />
+      <MyCurrentTime />
       <VisitorClock />
       <p>Welcome to my personal website!</p>
       <p>Thanks for wanting to learn more about me. </p>
@@ -72,18 +71,7 @@ export const VisitorClock = () => {
         <Image />
       </div>
       <Link to="/page-2/">Go to page 2</Link>
-    </MainLayout>
+    </Layout>
   </div>
-) */
-
-const IndexPage = () => {
-  return (
-    <div>
-      <MyCurrentTime></MyCurrentTime>
-      <VisitorClock />
-      <MainLayout></MainLayout>
-    </div>
-  )
-}
-
+)
 export default IndexPage

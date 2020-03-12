@@ -2,7 +2,7 @@ import React from "react"
 import { Form, Input, Button, Checkbox } from "antd"
 import { UserOutlined, LockOutlined } from "@ant-design/icons"
 
-const NormalLoginForm = () => {
+const LoginForm = () => {
   const onFinish = values => {
     console.log("Received values of form: ", values)
   }
@@ -65,4 +65,4 @@ const NormalLoginForm = () => {
   )
 }
 
-ReactDOM.render(<NormalLoginForm />, mountNode)
+export default LoginForm

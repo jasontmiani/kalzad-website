@@ -1,5 +1,5 @@
 import React from "react"
-import { Layout, Menu, Breadcrumb } from "antd/es/layout"
+import { Layout, Menu, Breadcrumb } from "antd"
 import {
   DesktopOutlined,
   PieChartOutlined,
@@ -11,7 +11,7 @@ import {
 const { Header, Content, Footer, Sider } = Layout
 const { SubMenu } = Menu
 
-class MainLayout extends React.Component {
+class AdminLayout extends React.Component {
   state = {
     collapsed: false,
   }
@@ -92,4 +92,4 @@ class MainLayout extends React.Component {
   }
 }
 
-export default MainLayout
+export default AdminLayout
